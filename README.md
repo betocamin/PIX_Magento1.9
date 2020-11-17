@@ -12,7 +12,6 @@ INSTALAÇÃO
 Procure pelo código {{var payment_html}} e coloque abaixo dele {{block type='core/template' area='frontend' template='pixnoemail/pix.phtml' order=$order}} , desta forma o QR Code será exibido no email enviado para o cliente caso o pagamento seja via PIX.
 3 - Fazer um cópia do arquivo app/design/frontend/base/default/template/checkout/success.phtml para app/design/frontend/seu_pacote/seu_tema/template/checkout/success.phtml e inserir o código abaixo entre as linhas 39 e 40:
 
-<!-- Start PIX code -->
 <?php if ($order->getPayment()->getMethod() == "pixbasico"){ ?>
 				<?php
 				$order = Mage::getModel ( 'sales/order' );
@@ -24,4 +23,3 @@ Procure pelo código {{var payment_html}} e coloque abaixo dele {{block type='co
 				}
 				?>
 <?php } ?>
-<!-- Finish PIX code -->

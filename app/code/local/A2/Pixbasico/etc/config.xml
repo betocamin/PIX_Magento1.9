@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <A2_Pixbasico>
+            <version>0.1.0</version>
+        </A2_Pixbasico>
+    </modules>
+    <global>
+        <models>
+            <pixbasico>
+                <class>A2_Pixbasico_Model</class>
+            </pixbasico>
+        </models>
+        <helpers>
+            <pixbasico>
+                <class>A2_Pixbasico_Helper</class>
+            </pixbasico>
+        </helpers>
+    </global>
+    <default>
+        <payment>
+            <pixbasico>
+                <active>0</active>
+                <model>pixbasico/custommodel</model>
+                <order_status>pending</order_status>
+                <title>PIX Basico</title>
+                <sort_order>4</sort_order>
+            </pixbasico>
+         </payment>
+    </default>
+</config>

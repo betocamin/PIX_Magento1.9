@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <A2_Pixbasico>
+            <active>true</active>
+            <codePool>local</codePool>
+        </A2_Pixbasico>
+    </modules>
+</config> 
